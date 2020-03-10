@@ -1,0 +1,231 @@
+
+/*----------Page Layout----------*/
+
+body {
+    margin: 0 auto;
+    height: 100%;
+    font-family: 'Merriweather' ;
+    color: #2d3945;
+}
+
+#wrapper {
+    background-color: #2d3945;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+}
+
+.signup {
+    text-align: center;
+    margin: 0 5%;
+}
+
+.double-border
+{
+    border-top: 4px solid #2d3945;
+    height: 3px;
+    border-bottom: 2px solid #2d3945;
+    margin: 0 5%;
+}
+
+p {
+    opacity: 70%;
+    font-size: 1.1em;
+    padding-bottom: 10px;
+}
+
+fieldset {
+    border: none;
+}
+
+.fieldset {
+    margin: 0 5%;
+    border-bottom: double;
+    border-color: #2d3945;
+    border-width: 2px;
+}
+
+.fieldset legend {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.fieldset2 legend {
+    padding-top: 20px;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.fieldset input,
+select {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #eff0f1;
+    border: none;
+    text-indent: 5%;
+}
+
+.fieldset2 input {
+    margin-bottom: 20px;
+}
+
+.fieldset2 textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #eff0f1;
+    border: none;
+    text-indent: 3%;
+    padding-top: 10px;
+}
+
+.textarea-label {
+    padding-top:15px;
+}
+
+::placeholder {
+    text-align: right;
+    padding-right: 5%;
+    font-style: italic;
+    opacity: 75%;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #46698b;
+    border-width: 2px;
+    outline: none;
+}
+
+.fieldset label,
+.fieldset2 label {
+    font-size: 1.1em;
+    opacity: 70%;
+}
+
+#zip {
+    width: 50%;
+
+}
+
+.submit input {
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #4ebbb5;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Merriweather';
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer p {
+    text-align: center;
+    opacity: 55%;
+    font-style: italic;
+    margin-top: 0;
+    padding-bottom: 30px;
+}
+
+.fieldset2 {
+    padding-left: 6%;
+}
+
+
+@media (min-width: 768px) {
+
+    body {
+        max-width: 1400px;
+    }
+
+    #wrapper {
+        background-color: #2d3945;
+        height: 100%;
+        overflow: hidden;
+        text-align: center;
+        color: white;
+        font-size: smaller;
+    }
+
+    .signup {
+        margin-top: 7%;
+    }
+
+    .signup p {
+        margin-top: -15px;
+        padding-bottom: 20px;
+        font-size: 1em;
+    }
+
+    #secondary-wrapper {
+        margin: 0 15% 15% 15%;
+    }
+
+    footer p {
+        padding-bottom: 0px;
+    }
+
+    .fieldset legend {
+        padding-top: 35px;
+    }
+
+    .fieldset br { 
+        display: none;
+    }
+
+    .input1,
+    .input2,
+    .input3,
+    .input4,
+    .input5,
+    .input6 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .input7 input {
+        justify-content: flex-start;
+        flex-basis: 30%;
+    }
+
+    .input7 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .input1 input,
+    .input2 input,
+    .input3 input,
+    .input4 input,
+    .input5 input,
+    .input6 select {
+        flex-basis: 70%;
+    }
+
+    .input1 label,
+    .input2 label,
+    .input3 label,
+    .input4 label,
+    .input5 label,
+    .input6 label,
+    .input7 label {
+        flex-basis: 30%;
+        justify-content: flex-start;
+    }
+
+
+}
