@@ -1,3 +1,5 @@
+/*==========Mobile Layout==========*/
+
 
 /*----------Page Layout----------*/
 
@@ -35,6 +37,9 @@ p {
     padding-bottom: 10px;
 }
 
+
+/*----------Form Layout----------*/
+
 fieldset {
     border: none;
 }
@@ -67,7 +72,7 @@ select {
     margin-bottom: 20px;
     border-radius: 5px;
     background-color: #eff0f1;
-    border: none;
+    border: 1px solid white;
     text-indent: 5%;
 }
 
@@ -82,7 +87,7 @@ select {
     margin-bottom: 20px;
     border-radius: 5px;
     background-color: #eff0f1;
-    border: none;
+    border: 1px solid white;
     text-indent: 3%;
     padding-top: 10px;
 }
@@ -143,8 +148,11 @@ footer p {
 }
 
 
+/*==========Desktop Layout==========*/
+
 @media (min-width: 768px) {
 
+    /*----------Page Layout----------*/
     body {
         max-width: 1400px;
     }
@@ -176,6 +184,8 @@ footer p {
         padding-bottom: 0px;
     }
 
+
+    /*----------Form Layout----------*/
     .fieldset legend {
         padding-top: 35px;
     }
